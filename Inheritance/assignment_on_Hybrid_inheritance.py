@@ -31,9 +31,9 @@ class Faculty(B):
         print(f"Name of the faculty: {self.faculty}")
 
 class Student(B,C):
-    def __init__(self,student_name,branch,university_name):
+    def __init__(self,student_name,branch,course,university_name):
         B.__init__(self,branch,university_name)
-        #C.__init__(self,course,university_name)
+        C.__init__(self,course,university_name)
         # super().__init__( branch,university_name)
         # super().__init_subclass__(course,university_name)
         self.name = student_name

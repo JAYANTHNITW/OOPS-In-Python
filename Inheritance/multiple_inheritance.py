@@ -19,21 +19,39 @@ class Female:
     def clean(self):
         print('Daily i will clean the house')
 
-
-class Boy(Male,Female):
-    def __init__(self,name,language):
-        self.language = language
+class girl(Female,Male):
+    def __init__(self,name):
+          
+        # Female.__init__(self,name)
+        Male.__init__(self)
         Female.__init__(self,name)
-        Male.__init__(self,num_heart=3)
 
-    def display(self):
-        return f"Hi iam {self.name} and i work on {self.language}"
+# class Boy(Male,Female):
+#     def __init__(self,name,language):
+#         pass
+#     #     self.language = language
+#     #     super().__init__(self,name)
+#         Female.__init__(self,name)
+#         Male.__init__(self,num_heart=3)
+
+    # def display(self):
+    #     return f"Hi iam {self.name} and i work on {self.language}"
 
 
 
-boy_1 = Boy('jay','python')
-#print(Female.__init__(boy_1))
-print(boy_1.num_nose)
-print(boy_1.num_heart)
-print(boy_1.language)
-print(boy_1.display())
+# boy_1 = Boy('jay','python')
+# #print(Female.__init__(boy_1))
+# print(boy_1.num_nose)
+# print(boy_1.num_heart)
+# print(boy_1.language)
+# print(boy_1.display())
+#b1= Boy('jayanth','python')
+
+# print(Boy.mro())
+# b1.sleep()
+# b1.clean()
+
+g1 = girl("varsha")
+g1.clean()
+g1.sleep()
+print(g1.num_eyes)
